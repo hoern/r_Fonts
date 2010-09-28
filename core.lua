@@ -1,8 +1,8 @@
 rFonts = CreateFrame("Frame", "r_Fonts");
 rFonts:SetScript('OnEvent', function(self, event, ...) self[event](self, ...) end)
 
-function phont:ApplySystemFonts()
-  DAMAGE_TEXT_FONT = "Interface\\AddOns\\Phont\\Fonts\\animeace.ttf";
+function rFonts:ApplySystemFonts()
+  DAMAGE_TEXT_FONT = [[Interface/AddOns/r_Fonts/fonts/animeace.ttf]]
 end
 
 function rFonts:ADDON_LOADED(addon)
